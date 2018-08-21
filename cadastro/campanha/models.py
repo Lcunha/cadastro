@@ -37,7 +37,7 @@ class Cidade(models.Model):
         return self.nome
 
 def get_cidade_brasilia():
-    return Cidade.objects.get_or_create(nome='Brasília',sigla='BSB')[0]
+    return Cidade.objects.get_or_create(nome='Brasilia',sigla='BSB')[0]
 
 class Eleitor(models.Model):
     nome = models.CharField(max_length=80)
